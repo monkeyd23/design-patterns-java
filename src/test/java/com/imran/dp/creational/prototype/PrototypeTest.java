@@ -21,8 +21,8 @@ public class PrototypeTest {
         eve.addItemToList("map");
         eve.addItemToList("reading light");
 
-        Assert.assertEquals(alex.getShoppingList().size(), 5);
-        Assert.assertEquals(eve.getShoppingList().size(), 5);
+        Assert.assertEquals(5, alex.getShoppingList().size());
+        Assert.assertEquals(5, eve.getShoppingList().size());
     }
 
     @Test
@@ -36,7 +36,7 @@ public class PrototypeTest {
         eve.setName("Eve");
         eve.addItemToList("reading light");
 
-        Assert.assertEquals(alex.getShoppingList().size(), 5);
-        Assert.assertEquals(eve.getShoppingList().size(), 5);
+        Assert.assertEquals(5, alex.getShoppingList().size());
+        Assert.assertEquals(5, eve.getShoppingList().size());
     }
 }

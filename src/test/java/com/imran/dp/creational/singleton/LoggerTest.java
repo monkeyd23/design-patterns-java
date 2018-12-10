@@ -1,9 +1,5 @@
-package com.imran.dp.creational.Singleton;
+package com.imran.dp.creational.singleton;
 
-import com.imran.dp.creational.singleton.EnhancedLogger;
-import com.imran.dp.creational.singleton.Logger;
-import com.imran.dp.creational.singleton.Shopper;
-import com.imran.dp.creational.singleton.Store;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -20,8 +16,8 @@ public class LoggerTest {
         Shopper alex = new Shopper("alex", 500);
         Store skiShop = new Store("Steep and Deep Supplies", Arrays.asList("Downhill Skis", "Knit Hat"));
 
-        Assert.assertEquals(logger.getCount(), 1);
-        Assert.assertEquals(logger.getLogs().size(), 1);
+        Assert.assertEquals(1, logger.getCount());
+        Assert.assertEquals(1, logger.getLogs().size());
     }
 
     @Test
@@ -33,7 +29,7 @@ public class LoggerTest {
         Shopper alex = new Shopper("alex", 500);
         Store skiShop = new Store("Steep and Deep Supplies", Arrays.asList("Downhill Skis", "Knit Hat"));
 
-        Assert.assertEquals(enhancedLogger.getCount(), 3);
-        Assert.assertEquals(enhancedLogger.getLogs().size(), 3);
+        Assert.assertEquals(3, enhancedLogger.getCount());
+        Assert.assertEquals(3,enhancedLogger.getLogs().size());
     }
 }
