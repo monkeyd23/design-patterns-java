@@ -12,7 +12,7 @@ class SimplePersonFactory {
 
     // LazyHolder for Thread safe
     private static class LazyHolder {
-        static final SimplePersonFactory INSTANCE = new SimplePersonFactory();
+        private static final SimplePersonFactory INSTANCE = new SimplePersonFactory();
     }
 
     // public getInstance() method
@@ -34,6 +34,8 @@ class SimplePersonFactory {
                 break;
             case CLASS_NAME_EMPLOYEE:
                 person = new Employee(name);
+                break;
+            default:
                 break;
         }
 
