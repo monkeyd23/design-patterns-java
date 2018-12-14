@@ -2,7 +2,7 @@ package com.imran.dp.structural.bridge;
 
 public class Blog extends WebApplication {
 
-    Blog(Theme theme) {
+    public Blog(Theme theme) {
         super(theme);
     }
 

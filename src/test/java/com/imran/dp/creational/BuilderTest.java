@@ -1,5 +1,7 @@
-package com.imran.dp.creational.builder;
+package com.imran.dp.creational;
 
+import com.imran.dp.creational.builder.Task;
+import com.imran.dp.creational.builder.TaskBuilder;
 import org.junit.Assert;
 import org.junit.Test;
 

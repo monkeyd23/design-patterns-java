@@ -2,7 +2,7 @@ package com.imran.dp.structural.bridge;
 
 public class NewsWebsite extends WebApplication {
 
-    NewsWebsite(Theme theme) {
+    public NewsWebsite(Theme theme) {
         super(theme);
     }
 

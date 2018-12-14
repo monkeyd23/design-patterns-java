@@ -3,11 +3,11 @@ package com.imran.dp.creational.abstractFactory;
 import java.util.LinkedList;
 import java.util.List;
 
-class ReportQueue {
+public class ReportQueue {
 
-    List<Report> reports;
+    private List<Report> reports;
 
-    void addReport(String factoryType, String reportType, String name) {
+    public void addReport(String factoryType, String reportType, String name) {
         IReportFactory reportFactory = ReportFactoryProvider.getReportFactory(factoryType);
         if(this.reports == null) {
             this.reports = new LinkedList<>();
@@ -15,11 +15,15 @@ class ReportQueue {
         this.reports.add(reportFactory.createReport(reportType, name));
     }
 
-    void processReports() {
+    public void processReports() {
         this.reports.forEach(report -> {
             report.ProcessReport();
             System.out.println("------------------- Processsing Completed -------------------");
         });
         this.reports.clear();
+    }
+
+    public List<Report> getReports() {
+        return reports;
     }
 }

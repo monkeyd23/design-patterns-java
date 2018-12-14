@@ -1,5 +1,9 @@
-package com.imran.dp.structural.adapter;
+package com.imran.dp.structural;
 
+import com.imran.dp.structural.adapter.GermanPlug;
+import com.imran.dp.structural.adapter.IndianAdapter;
+import com.imran.dp.structural.adapter.IndianSocket;
+import com.imran.dp.structural.adapter.UKPlug;
 import org.junit.Assert;
 import org.junit.Test;
 

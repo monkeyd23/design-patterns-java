@@ -4,7 +4,7 @@ public class Product extends CatalogItem {
     private String name;
     private Double price;
 
-    Product(String name, double price) {
+    public Product(String name, double price) {
         this.name = name;
         this.price = price;
     }

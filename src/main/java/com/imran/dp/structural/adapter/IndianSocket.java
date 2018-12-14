@@ -1,8 +1,8 @@
 package com.imran.dp.structural.adapter;
 
-class IndianSocket {
+public class IndianSocket {
 
-    int plugIn(IndianPlug indianPlug) {
+    public int plugIn(IndianPlug indianPlug) {
         return indianPlug.getIndianVolts();
     }
 }

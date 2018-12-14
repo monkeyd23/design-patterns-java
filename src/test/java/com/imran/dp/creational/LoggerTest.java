@@ -1,5 +1,9 @@
-package com.imran.dp.creational.singleton;
+package com.imran.dp.creational;
 
+import com.imran.dp.creational.singleton.EnhancedLogger;
+import com.imran.dp.creational.singleton.Logger;
+import com.imran.dp.creational.singleton.Shopper;
+import com.imran.dp.creational.singleton.Store;
 import org.junit.Assert;
 import org.junit.Test;
 

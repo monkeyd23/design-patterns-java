@@ -1,5 +1,6 @@
-package com.imran.dp.creational.abstractFactory;
+package com.imran.dp.creational;
 
+import com.imran.dp.creational.abstractFactory.ReportQueue;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -18,10 +19,10 @@ public class AbstractFactoryTest {
             reportQueue.addReport(tmp[0], tmp[1], report);
         }
 
-        Assert.assertEquals(7, reportQueue.reports.size());
+        Assert.assertEquals(7, reportQueue.getReports().size());
 
         reportQueue.processReports();
 
-        Assert.assertEquals(0, reportQueue.reports.size());
+        Assert.assertEquals(0, reportQueue.getReports().size());
     }
 }

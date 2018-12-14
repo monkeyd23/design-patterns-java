@@ -5,11 +5,11 @@ public class IndianAdapter implements IndianPlug {
     private GermanPlug germanPlug;
     private UKPlug ukPlug;
 
-    IndianAdapter(GermanPlug germanPlug) {
+    public IndianAdapter(GermanPlug germanPlug) {
         this.germanPlug = germanPlug;
     }
 
-    IndianAdapter(UKPlug ukPlug) {
+    public IndianAdapter(UKPlug ukPlug) {
         this.ukPlug = ukPlug;
     }
 

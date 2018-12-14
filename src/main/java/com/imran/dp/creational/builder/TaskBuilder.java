@@ -2,7 +2,7 @@ package com.imran.dp.creational.builder;
 
 import java.util.Date;
 
-class TaskBuilder {
+public class TaskBuilder {
 
     private final long id;
     private String summary = "";
@@ -10,31 +10,31 @@ class TaskBuilder {
     private boolean done = false;
     private Date dueDate;
 
-    TaskBuilder(long id) {
+    public TaskBuilder(long id) {
         this.id = id;
     }
 
-    TaskBuilder setSummary(String summary) {
+    public TaskBuilder setSummary(String summary) {
         this.summary = summary;
         return this;
     }
 
-    TaskBuilder setDescription(String description) {
+    public TaskBuilder setDescription(String description) {
         this.description = description;
         return this;
     }
 
-    TaskBuilder setDone(boolean done) {
+    public TaskBuilder setDone(boolean done) {
         this.done = done;
         return this;
     }
 
-    TaskBuilder setDueDate(Date dueDate) {
+    public TaskBuilder setDueDate(Date dueDate) {
         this.dueDate = dueDate;
         return this;
     }
 
-    Task build() {
+    public Task build() {
         return new Task(id, summary, description, done, dueDate);
     }
 }

@@ -2,7 +2,7 @@ package com.imran.dp.creational.builder;
 
 import java.util.Date;
 
-class Task {
+public class Task {
 
     private final long id;
     private String summary;
@@ -18,23 +18,23 @@ class Task {
         this.dueDate = dueDate;
     }
 
-    boolean isDone() {
+    public boolean isDone() {
         return done;
     }
 
-    long getId() {
+    public long getId() {
         return id;
     }
 
-    String getSummary() {
+    public String getSummary() {
         return summary;
     }
 
-    String getDescription() {
+    public String getDescription() {
         return description;
     }
 
-    Date getDueDate() {
+    public Date getDueDate() {
         return dueDate;
     }
 }

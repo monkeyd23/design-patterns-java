@@ -1,5 +1,6 @@
-package com.imran.dp.structural.bridge;
+package com.imran.dp.structural;
 
+import com.imran.dp.structural.bridge.*;
 import org.junit.Test;
 
 public class TestBridgePattern {
@@ -20,7 +21,6 @@ public class TestBridgePattern {
         // render blog
         webApplication = new NewsWebsite(lightTheme);
         webApplication.render();
-
 
     }
 }

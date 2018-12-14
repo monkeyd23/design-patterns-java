@@ -1,5 +1,7 @@
-package com.imran.dp.creational.prototype;
+package com.imran.dp.creational;
 
+import com.imran.dp.creational.prototype.PrototypeManager;
+import com.imran.dp.creational.prototype.Shopper;
 import org.junit.Assert;
 import org.junit.Test;
 

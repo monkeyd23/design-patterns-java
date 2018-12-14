@@ -8,7 +8,7 @@ public class Catalog extends CatalogItem {
     private String name;
     private List<CatalogItem> items = new LinkedList<>();
 
-    Catalog(String name) {
+    public Catalog(String name) {
         this.name = name;
     }
 

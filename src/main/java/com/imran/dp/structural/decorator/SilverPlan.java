@@ -1,8 +1,8 @@
 package com.imran.dp.structural.decorator;
 
-class SilverPlan extends DataPlan {
+public class SilverPlan extends DataPlan {
 
-    SilverPlan() {
+    public SilverPlan() {
         name = "Silver Plan";
         description = "25 MB/s unlimited";
         cost = 600 ;

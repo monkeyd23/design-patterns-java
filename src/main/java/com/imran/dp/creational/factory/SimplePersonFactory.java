@@ -1,6 +1,6 @@
 package com.imran.dp.creational.factory;
 
-class SimplePersonFactory {
+public class SimplePersonFactory {
 
     // Class types
     private static final String CLASS_NAME_SHOPPER = "Shopper";
@@ -16,12 +16,12 @@ class SimplePersonFactory {
     }
 
     // public getInstance() method
-    static SimplePersonFactory getInstance() {
+    public static SimplePersonFactory getInstance() {
         return  SimplePersonFactory.LazyHolder.INSTANCE;
     }
 
     // public createPerson
-    Person createPerson(Class personType, String name) {
+    public Person createPerson(Class personType, String name) {
 
         Person person = null;
 

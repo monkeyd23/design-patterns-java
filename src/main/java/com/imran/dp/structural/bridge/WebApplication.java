@@ -1,6 +1,6 @@
 package com.imran.dp.structural.bridge;
 
-abstract class WebApplication {
+public abstract class WebApplication {
 
     Theme theme;
 
@@ -8,5 +8,5 @@ abstract class WebApplication {
         this.theme = theme;
     }
 
-    abstract void render();
+    public abstract void render();
 }

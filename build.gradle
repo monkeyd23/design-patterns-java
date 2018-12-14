@@ -5,6 +5,7 @@ plugins {
 group 'com.imran'
 version '1.0'
 
+//noinspection GroovyUnusedAssignment
 sourceCompatibility = 1.8
 
 repositories {

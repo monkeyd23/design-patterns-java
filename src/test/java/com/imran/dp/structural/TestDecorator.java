@@ -1,5 +1,6 @@
-package com.imran.dp.structural.decorator;
+package com.imran.dp.structural;
 
+import com.imran.dp.structural.decorator.*;
 import org.junit.Test;
 
 public class TestDecorator {
@@ -13,6 +14,8 @@ public class TestDecorator {
 
         // Give addons
         plan1 = new WeekdayBooster(plan1);
+        plan1 =  new NightBooster(plan1);
+
         plan2 = new WeekdayBooster(plan2);
         plan2 = new WeekendBooster(plan2);
 

@@ -1,5 +1,6 @@
-package com.imran.dp.creational.factory;
+package com.imran.dp.creational;
 
+import com.imran.dp.creational.factory.*;
 import org.junit.Assert;
 import org.junit.Test;
 

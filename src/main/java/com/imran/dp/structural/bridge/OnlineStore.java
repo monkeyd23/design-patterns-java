@@ -2,7 +2,7 @@ package com.imran.dp.structural.bridge;
 
 public class OnlineStore extends WebApplication {
 
-    OnlineStore(Theme theme) {
+    public OnlineStore(Theme theme) {
         super(theme);
     }
 

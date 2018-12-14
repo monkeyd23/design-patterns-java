@@ -3,7 +3,7 @@ package com.imran.dp.creational.prototype;
 import java.util.HashMap;
 import java.util.Map;
 
-class PrototypeManager {
+public class PrototypeManager {
 
     private static Map<String, ProtoTypeCompatible> prototypes;
 
@@ -32,7 +32,7 @@ class PrototypeManager {
         prototypes.put("Store", storePrototype);
     }
 
-    static ProtoTypeCompatible getPrototype(String className) {
+    public static ProtoTypeCompatible getPrototype(String className) {
         ProtoTypeCompatible clonedPrototype = null;
 
         try {

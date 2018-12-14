@@ -2,7 +2,7 @@ package com.imran.dp.creational.abstractFactory;
 
 public class Report {
 
-    String name;
+    private String name;
 
     Report(String name) {
         this.name = name;

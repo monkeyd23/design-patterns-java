@@ -8,19 +8,19 @@ public class Shopper implements ProtoTypeCompatible {
     private String name;
     private List<String> shoppingList;
 
-    Shopper(String name) {
+    public Shopper(String name) {
         shoppingList = new ArrayList<>();
         this.name = name;
     }
 
-    void addItemToList(String item) {
+    public void addItemToList(String item) {
         this.shoppingList.add(item);
     }
 
     public String toString() {
         StringBuilder returnString = new StringBuilder(this.name + " ==> { ");
         for(String item : this.shoppingList) {
-            returnString.append(item + ", ");
+            returnString.append(item).append(", ");
         }
         returnString.replace(returnString.lastIndexOf(", "), returnString.length(), ". }");
         return returnString.toString();
@@ -34,11 +34,11 @@ public class Shopper implements ProtoTypeCompatible {
         return newShopper;
     }
 
-    List<String> getShoppingList() {
+    public List<String> getShoppingList() {
         return this.shoppingList;
     }
 
-    void setName(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 }

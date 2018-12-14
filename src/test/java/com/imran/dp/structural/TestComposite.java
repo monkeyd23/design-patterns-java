@@ -1,5 +1,8 @@
-package com.imran.dp.structural.composite;
+package com.imran.dp.structural;
 
+import com.imran.dp.structural.composite.Catalog;
+import com.imran.dp.structural.composite.CatalogItem;
+import com.imran.dp.structural.composite.Product;
 import org.junit.Test;
 
 public class TestComposite {
